@@ -1,0 +1,202 @@
+/*===common css start===*/
+
+:root {
+    --highlight-color: #8484bf;
+    --primary-color: #0f2f44;
+    --light-color: #fefefe;
+    --hover-color: #ffc712;
+    --icon-color: #999999;
+    --text-color: #444444;
+    --border-color: #dedede;
+    --hover-background: #fff9e6;
+   --heading-font : "Abril Fatface", serif;
+    --secondary-font: "Ubuntu Condensed", sans-serif;
+   --body-font: "Open Sans", sans-serif;
+   --about-color : #ffffff;
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+body{
+    font-family: var(--body-font);
+}
+h1,h2{
+    font-family: var(--heading-font);
+}
+h3,h4,h5,h6,a,button {
+    font-family: var(--secondary-font);
+
+}
+button 
+{
+    list-style-type: none;
+    
+}
+    
+   
+    /*===common css end===*/
+    
+
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+button {
+    cursor: pointer;
+}
+.container{
+    width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.text-center {
+    align-items: center;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.w-50 {
+    width: 50%;
+}
+.w-33 {
+    width: calc(100% / 3);
+}
+.text-justify{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+.text-center{
+    text-align: center;
+}
+.text-justify {
+    text-align: justify;
+}
+
+/*===common css end===*/
+/*== top bar section css start ==*/
+#top_bar {
+    background-color:var(--primary-color);
+    font-family: var(--secondary-font);
+    color:aliceblue;
+    justify-content: space-between;
+}
+#top_bar {
+    line-height: 24px;
+    padding: 13 0;
+}
+/*== top bar section css end ==*/
+/*=== nav saction css start===*/
+
+#nav .menu ul li a {
+    font-size: 16px;
+    line: height 24px; ;
+    text-transform: capitalize;
+    color: var(--primary-color);
+    font-weight: 500;
+    padding: 35.5px 19px;
+    display: inline-block;
+    transition: 0.4s;
+}
+#nav .menu ul li button {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--border-color);
+    color: var(--icon-color);
+    background: none;
+    margin-left: 20px;
+    transition: 0.4s;
+}
+#nav .menu button {
+    text-align: center;
+}
+#nav .menu ul li a:hover,
+#nav .menu ul li button:hover {
+    color: var(--hover-color);
+    background-color: var(--hover-background);
+}
+    /*=== nav section css end===*/
+    /*==hero section css start==*/
+#hero {
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    color:black;
+}
+#hero .inner_container {
+    width: 40%;
+}
+#hero a {
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color:var(--light-color) ;
+    background-color: var(--highlight-color);
+    display: inline-block;
+    padding: 12.5px 21px;
+    border-radius: 8px;
+    transition: 0.4s;
+}
+#hero a:hover {
+    background-color: var(--light-color);
+    color: var(--highlight-color);
+}
+#hero button{
+    width: 49px;
+    height: 49px;
+    border-radius: 50%;
+    background-color: var(--light-color);
+    border: none;
+    color: var(--highlight-color);
+    font-size: 16px;
+    margin-left: 20px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+#hero button:hover {
+    background-color: var(--highlight-color);
+    color: var(--light-color);
+}
+ /*==hero section css end==*/
+  /*==about section css start==*/
+  #about .inner_container{
+    width: 50%;
+  background-color: var(--about-color);
+
+  }
+  #about .inner_container p{
+    line-height: 24px;
+  }
+  #about ul li{
+    margin: 30px 30px;
+   background-color: var(--about-color);
+  }
+  #about .btn a{
+    background-color: var(--hover-color);
+    font-size: 20px;
+    font-weight: 500;
+    padding: 9px 20px;
+    border-radius: 8px;
+  }
+  #about .btn a:hover{
+    background-color: var(--icon-color);
+    color: var(--text-color);
+  }
+    
+
+/*== hero section css end==*/
